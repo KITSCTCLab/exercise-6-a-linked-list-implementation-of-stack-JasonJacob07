@@ -7,19 +7,16 @@ class Stack:
   def __init__(self):
     self.head = None
     
- #pushing value into the stack
-  def push(self, data) -> None:
+  def push(self, data) -> None: #pushing value into the stack by using head pointer
     new_node=Node(data)
     new_node.next=self.head
     self.head=new_node
     
-#if head is connected with some node, to remove the node we will change the head to the next node.
-  def pop(self) -> None:
+  def pop(self) -> None: #removing value from the stack by changing the position of head pointer
      if self.head is not None:
       self.head = self.head.next
       
-  def status(self):
-    #It prints all the elements of stack.
+  def status(self):#It prints all the elements of stack.
     temp = self.head
     while temp is not None:
       print (temp.data, end="=>")
