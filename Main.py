@@ -3,7 +3,6 @@ class Node:
     self.data = data
     self.next = None
 
-
 class Stack:
   def __init__(self):
     self.head = None
@@ -28,15 +27,12 @@ class Stack:
     """
     It prints all the elements of stack.
     """
-     temp = self.head
+    temp = self.head
     while temp is not None:
       print (temp.data, end="=>")
       temp = temp.next
-
     print (None)
 
-
-# Do not change the following code
 stack = Stack()
 operations = []
 for specific_operation in input().split(','):
