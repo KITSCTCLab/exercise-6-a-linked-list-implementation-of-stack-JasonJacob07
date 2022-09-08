@@ -22,7 +22,6 @@ class Stack:
      if self.head is not None:
       self.head = self.head.next
       
-
   def status(self):
     #It prints all the elements of stack.
     temp = self.head
